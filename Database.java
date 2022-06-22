@@ -34,6 +34,7 @@ public class Database {
 
         } catch (SQLException e) {
             System.out.println("Error while creating table " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -48,6 +49,7 @@ public class Database {
             statement.executeUpdate();
         } catch (SQLException e) {
             System.out.println("Error while adding Account parameters" + e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -117,6 +119,7 @@ public class Database {
             statement.executeUpdate();
         } catch (SQLException e) {
             System.out.println("Error reading from file");
+            e.printStackTrace();
             throw new RuntimeException("Error finding element");
         }
     }
