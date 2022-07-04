@@ -70,6 +70,7 @@ public class Database {
             }
         } catch (SQLException e) {
             System.out.println("Error reading from file");
+            e.printStackTrace();
             throw new RuntimeException("Error while finding element" + e.getMessage());
         }
     }
@@ -92,6 +93,7 @@ public class Database {
             statement.executeUpdate();
         } catch (SQLException e) {
             System.out.println("Error reading from file");
+            e.printStackTrace();
             throw new RuntimeException("Error finding element");
         }
     }
@@ -107,6 +109,7 @@ public class Database {
             }
         } catch (SQLException e) {
             System.out.println("Error reading from file");
+            e.printStackTrace();
             throw new RuntimeException("Error while finding element");
         }
     }

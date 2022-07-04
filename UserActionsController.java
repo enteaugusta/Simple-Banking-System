@@ -43,7 +43,7 @@ public class UserActionsController {
         System.out.println("0. Exit");
         int userAction2 = scanner.nextInt();
         scanner.nextLine();
-        Banking banking = Banking.getEnumfromId(userAction2);
+        Banking banking = Banking.getEnumFromId(userAction2);
         switch (Objects.requireNonNull(banking)) {
             case BALANCE:
                 double balance = cardDB.getBalance(number);

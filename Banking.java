@@ -16,7 +16,7 @@ public enum Banking {
 		this.id = id;
 	}
 	
-	public static Banking getEnumfromId(int id) {
+	public static Banking getEnumFromId(int id) {
 		for (Banking type : values()) {
 			if (type.getId() == id) {
 				return type;

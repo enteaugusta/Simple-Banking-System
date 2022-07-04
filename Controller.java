@@ -24,7 +24,7 @@ public class Controller {
 		
 		while (loopState) {
 			userAction = getUserAction();
-			Banking banking = Banking.getEnumfromId(userAction);
+			Banking banking = Banking.getEnumFromId(userAction);
 			switch (Objects.requireNonNull(banking)) {
 				case CREATE_ACCOUNT:
 					createUserAccount();
